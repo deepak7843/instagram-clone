@@ -1,0 +1,40 @@
+.createContainer {
+  display: block;
+  justify-content: center;
+  margin-top: 5rem;
+
+}
+.createInput {
+  display: block;
+  width: 20rem;
+  height: 2.4rem;
+  padding: 0.7rem;
+  font-size: 1.1em;
+  font-weight: 500;
+  margin: auto;
+  margin-bottom: 1rem;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.createButton {
+  border: none;
+  padding: .5rem;
+  width: 23.5%;
+  font-size: 1.2em;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  background-color:#c5c5c5;
+
+}
+.createButton:hover {
+  background-color: skyblue
+}
+.message {
+  font-size: 1.2em;
+  text-align: center;
+  color: #36a936;
+}
+.txt{
+    font-size: 2rem;
+    font-weight: bold;
+}
