@@ -11,7 +11,7 @@ const Create = () => {
   let handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      let res = await fetch("http://localhost:8080/posts", {
+      let res = await fetch("https://instagram-clone55.herokuapp.com/posts", {
         method: "POST",
         headers: {
           "content-type": "application/json",

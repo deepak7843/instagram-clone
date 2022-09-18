@@ -9,9 +9,8 @@ const Home = () => {
   const [comment, setComment] = useState("");
   const [disableInput, setDisableInput] = useState("");
 
-
   useEffect(() => {
-    fetch("http://localhost:8080/posts", {
+    fetch("https://instagram-clone55.herokuapp.com/posts", {
       headers: {
         Authorization: "Bearer " + localStorage.getItem("jwt"),
       },
@@ -19,7 +18,7 @@ const Home = () => {
       .then((res) => res.json())
       .then((result) => {
         console.log(result);
-        result.sort((a,b)=>(b.id - a.id))
+        result.sort((a, b) => b.id - a.id);
         setData(result);
       });
   }, []);
@@ -28,9 +27,7 @@ const Home = () => {
     <div className="home">
       {console.log("Map", data)}
       {data?.map((item) => {
-        return (
-        <SinglePost item={item} key={item.id}/>
-        );
+        return <SinglePost item={item} key={item.id} />;
       })}
     </div>
   );
