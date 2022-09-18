@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import { UserContext } from "../App";
-import { Link } from "react-router-dom";
+
 import SinglePost from "./SinglePost";
 import "./Style/Home.css";
 

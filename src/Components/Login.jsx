@@ -1,15 +1,4 @@
 import {
-    Flex,
-    Box,
-    FormControl,
-    FormLabel,
-    Input,
-    Checkbox,
-    Stack,
-    Button,
-    Heading,
-    Text,
-    useColorModeValue,
     Link
   } from '@chakra-ui/react';
 import { useState } from 'react';
@@ -93,7 +82,7 @@ import "./Style/login.css"
           </div>
   
           <div className="signupField">
-            Don't have an account? <Link to="/signup">Sign up</Link>
+            Don't have an account? <RouterLink to="/signup">Sign up</RouterLink>
           </div>
   
           <div className="getApp">

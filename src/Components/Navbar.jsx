@@ -1,4 +1,4 @@
-import { Link } from "@chakra-ui/react";
+
 
 import { Link as RouterLink, useNavigate } from "react-router-dom";
 import "./Style/Navbar.css";
